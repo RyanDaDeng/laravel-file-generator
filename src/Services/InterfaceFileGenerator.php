@@ -25,9 +25,10 @@ class InterfaceFileGenerator extends AbstractFileGenerator
     {
         if ($this->template instanceof InterfaceTemplateInterface) {
             return [
+                'directory' => $this->template->getDirectory(),
                 'interface_name' => $this->template->getInterfaceName(),
                 'functions' => $this->template->getFunctions(),
-                'namespace' => $this->template->getNamespace(),
+                'namespace' => $this->template->getNamespace()
             ];
         }
         return [];

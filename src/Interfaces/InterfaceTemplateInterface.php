@@ -15,16 +15,22 @@ interface InterfaceTemplateInterface
     /**
      * @return string
      */
-    public function getInterfaceName();
+    public function getDirectory(): string;
+
+
+    /**
+     * @return string
+     */
+    public function getInterfaceName(): string;
 
 
     /**
      * @return array
      */
-    public function getFunctions();
+    public function getFunctions(): array;
 
     /**
-     * @return array
+     * @return string
      */
-    public function getNamespace();
+    public function getNamespace(): string;
 }

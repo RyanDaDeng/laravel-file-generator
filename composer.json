@@ -1,5 +1,5 @@
 {
-  "name": "timehunter/laravelfilegenerator",
+  "name": "timehunter/laravel-file-generator",
   "description": ":description",
   "license": "MIT",
   "authors": [
@@ -9,10 +9,13 @@
       "homepage": "https://ryandeng.com"
     }
   ],
-  "homepage": "https://github.com/timehunter/laravelfilegenerator",
+  "homepage": "https://github.com/timehunter/laravel-file-generator",
   "keywords": [
     "Laravel",
-    "LaravelFileGenerator"
+    "LaravelFileGenerator",
+    "laravel file generator",
+    "laravel structure generator",
+    "file generator"
   ],
   "require": {
     "php": ">=7.0"

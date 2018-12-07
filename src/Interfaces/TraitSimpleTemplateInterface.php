@@ -11,7 +11,5 @@ namespace TimeHunter\LaravelFileGenerator\Interfaces;
 
 interface TraitSimpleTemplateInterface
 {
-    public function getDirectory();
-
     public function getTemplateData();
 }
