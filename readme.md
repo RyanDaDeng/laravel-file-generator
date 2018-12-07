@@ -8,7 +8,7 @@
 A Laravel File Generator which allows you to:
 1. quickly generate trait, class and interface
 2. automate the creation of repeated php files
-3. help you generate code structure
+3. help you generate code base structure (modular,pattern etc.)
 
 The main logic is using Blade template engine to populate the files. Feel free to look into the source code.
 
