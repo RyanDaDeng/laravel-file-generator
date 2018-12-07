@@ -100,7 +100,7 @@ class ExampleSimpleInterfaceTemplate implements InterfaceSimpleTemplateInterface
      new ExampleSimpleTraitTemplate(),
      new ExampleSimpleInterfaceTemplate()
      ...
- ); // publish() supports miltiple parameters
+ ); // publish() supports multiple parameters
 ```
 #### Step 3
  Check your folders if the file is generated.
