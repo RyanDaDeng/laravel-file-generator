@@ -1,6 +1,6 @@
 {
   "name": "timehunter/laravel-file-generator",
-  "description": ":description",
+  "description": "A Laravel File Generator to automate creation of interface, trait and class files.",
   "license": "MIT",
   "authors": [
     {
