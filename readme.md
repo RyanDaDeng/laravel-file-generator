@@ -37,13 +37,12 @@ class ExampleSimpleInterfaceTemplate implements InterfaceSimpleTemplateInterface
     {
         return [
             'directory' => app_path() . '/Test',
-            'interface_name' => 'asdasdasd',
-            'namespace' => 'sfsd',
+            'interface_name' => 'ExampleInterface',
+            'namespace' => 'App\Example',
             'functions' => [
-                'public function store(StorePurchaseOrderRequest $request)',
-                'public function getPurchaseOrders()'
+                'public function get()',
+                'public function update()'
             ]
-
         ];
     }
 }
