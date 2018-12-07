@@ -12,6 +12,12 @@ A Laravel File Generator which allows you to:
 
 The main logic is using Blade template engine to populate the files. Feel free to look into the source code.
 
+## Incoming features
+1. will support command line generator
+2. will support schema validation
+3. will cover tests
+4. will support webpage realtime preview
+
 ## Requirement
 
 This package requires the following dependencies:
