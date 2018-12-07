@@ -11,13 +11,42 @@ A Laravel File Generator which allows you to:
 3. help you generate code structure
 
 The main logic is using Blade template engine to populate the files. Feel free to look into the source code.
+
+## Requirement
+
+This package requires the following dependencies:
+
+- Laravel 5.x
+- php > 7 (if you need support for version below 7, please create issue ticket)
+
+
 ## Installation
+
 
 Via Composer
 
 ``` bash
-$ composer require timehunter/laravelfilegenerator
+$ composer require timehunter/laravel-file-generator "^1.0.0"
 ```
+
+If your Laravel framework version <= 5.4, please register the service provider in your config file: /config/app.php, otherwise please skip it.
+
+
+``` php
+'providers'=[
+    ....,
+    TimeHunter\LaravelFileGenerator\LaravelFileGeneratorServiceProvider::class
+]
+```
+
+And also ( Laravel framework version <= 5.4)
+``` php
+'aliases'=[
+     ....,
+      'LaravelFileGenerator' => TimeHunter\LaravelFileGenerator\Facades\LaravelFileGenerator::class
+ ]
+```
+
 
 ## Usage
 
@@ -36,7 +65,7 @@ class ExampleSimpleInterfaceTemplate implements InterfaceSimpleTemplateInterface
     public function getTemplateData()
     {
         return [
-            'directory' => app_path() . '/Test',
+            'directory' => app_path() . '/Example',
             'interface_name' => 'ExampleInterface',
             'namespace' => 'App\Example',
             'functions' => [
@@ -54,7 +83,12 @@ class ExampleSimpleInterfaceTemplate implements InterfaceSimpleTemplateInterface
  Pass the template to the publish function from LaravelFileGenerator facade class
 
 ``` php
- LaravelFileGenerator::publish(new ExampleSimpleInterfaceTemplate());
+ LaravelFileGenerator::publish(
+     new ExampleSimpleInterfaceTemplate(),
+     new ExampleSimpleTraitTemplate(),
+     new ExampleSimpleInterfaceTemplate()
+     ...
+ ); // publish() supports miltiple parameters
 ```
 #### Step 3
  Check your folders if the file is generated.
@@ -100,7 +134,7 @@ getTemplateData()
             ],
             'trait_name' => 'ExampleTrait',
             'traits' => [
-                'use ExampleTrait'
+                'ExampleTrait'
             ],
             'functions' => [
                 'public function get()',
@@ -144,7 +178,7 @@ getTemplateData()
             'extends' => 'Controller',
             'implements' => ['sss', 'sss'],
             'traits' => [
-                'use ExampleTrait'
+                'ExampleTrait'
             ],
             'properties' => [
                 'protected $repo'

@@ -32,11 +32,12 @@ class LaravelFileGenerator
         return null;
     }
 
-    public function publish($object)
+    public function publish(...$objects)
     {
-        $generator = $this->getGenerator($object);
-        $generator->publish();
-
+        foreach ($objects as $object) {
+            $generator = $this->getGenerator($object);
+            $generator->publish();
+        }
     }
 
     public function preview($object)
