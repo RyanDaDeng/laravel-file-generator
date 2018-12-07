@@ -2,8 +2,7 @@
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
 [![Total Downloads][ico-downloads]][link-downloads]
-[![Build Status][ico-travis]][link-travis]
-[![StyleCI][ico-styleci]][link-styleci]
+
 
 
 A Laravel File Generator which allows you to:
@@ -160,16 +159,6 @@ getTemplateData()
 ```
 
 
-## Testing
-
-``` bash
-$ composer test
-```
-
-## Contributing
-
-Please see [contributing.md](contributing.md) for details and a todolist.
-
 ## Security
 
 If you discover any security related issues, please email ryandadeng@gmail.com instead of using the issue tracker.
@@ -179,11 +168,10 @@ If you discover any security related issues, please email ryandadeng@gmail.com i
 
 MIT. Please see the [license file](license.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/timehunter/laravelfilegenerator.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/timehunter/laravelfilegenerator.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/timehunter/laravelfilegenerator/master.svg?style=flat-square
-[ico-styleci]: https://styleci.io/repos/12345678/shield
+[ico-version]: https://img.shields.io/packagist/v/timehunter/laravel-file-generator.svg?style=flat-square
+[ico-downloads]: https://img.shields.io/packagist/dt/timehunter/laravel-file-generator.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/timehunter/laravelfilegenerator
-[link-downloads]: https://packagist.org/packages/timehunter/laravelfilegenerator
+
+[link-packagist]: https://packagist.org/packages/timehunter/laravel-file-generator
+[link-downloads]: https://packagist.org/packages/timehunter/laravel-file-generator
 [link-author]: https://github.com/RyanDaDeng/laravel-file-generator
