@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Facade;
 use Illuminate\View\View;
 
 /**
- * @method static void publish($template)
+ * @method static void publish(...$templates)
  * @method static View preview($template)
  * Class LaravelFileGenerator
  * @package TimeHunter\LaravelFileGenerator\Facades
