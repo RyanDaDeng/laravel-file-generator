@@ -12,7 +12,7 @@ A Laravel File Generator which allows you to:
 The main logic is using Blade template engine to populate the files. Feel free to look into the source code.
 
 ## Preview Demo
-![](preview.gif)
+![](https://github.com/RyanDaDeng/design-patterns/blob/master/preview.gif)
 
 ## Generation Demo
 ![](https://github.com/RyanDaDeng/design-patterns/blob/master/generation.gif)
@@ -38,7 +38,7 @@ This package requires the following dependencies:
 Via Composer
 
 ``` bash
-$ composer require timehunter/laravel-file-generator "^1.3.0"
+$ composer require timehunter/laravel-file-generator "^1.4.0"
 ```
 
 If your Laravel framework version <= 5.4, please register the service provider in your config file: /config/app.php, otherwise please skip it.
