@@ -15,7 +15,7 @@ The main logic is using Blade template engine to populate the files. Feel free t
 ![](preview.gif)
 
 ## Generation Demo
-![](preview.gif)
+![](generation.gif)
 
 
 ## Next Release features
