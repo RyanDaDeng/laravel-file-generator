@@ -4,13 +4,25 @@
 [![Total Downloads][ico-downloads]][link-downloads]
 
 
-
 A Laravel File Generator which allows you to:
 1. quickly generate trait, class and interface
 2. automate the creation of repeated php files
 3. help you generate code base structure (modular,pattern etc.)
 
 The main logic is using Blade template engine to populate the files. Feel free to look into the source code.
+
+## Preview Demo
+![](preview.gif)
+
+## Generation Demo
+![](generation.gif)
+
+
+## Next Release features
+1. will support command line generator
+2. will support schema validation
+3. will cover tests
+4. will support webpage realtime preview
 
 ## Requirement
 
