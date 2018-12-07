@@ -4,7 +4,7 @@
 [![Total Downloads][ico-downloads]][link-downloads]
 
 
-
+![](preview.gif)
 A Laravel File Generator which allows you to:
 1. quickly generate trait, class and interface
 2. automate the creation of repeated php files
