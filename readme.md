@@ -15,7 +15,7 @@ The main logic is using Blade template engine to populate the files. Feel free t
 ![](preview.gif)
 
 ## Generation Demo
-![](generation.gif)
+![](https://github.com/RyanDaDeng/design-patterns/blob/master/generation.gif)
 
 
 ## Next Release features
