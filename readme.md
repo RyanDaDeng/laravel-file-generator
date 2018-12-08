@@ -38,7 +38,7 @@ This package requires the following dependencies:
 Via Composer
 
 ``` bash
-$ composer require timehunter/laravel-file-generator "^1.5.0"
+$ composer require timehunter/laravel-file-generator "^1.6.0"
 ```
 
 If your Laravel framework version <= 5.4, please register the service provider in your config file: /config/app.php, otherwise please skip it.
@@ -83,7 +83,8 @@ class ExampleSimpleInterfaceTemplate implements InterfaceSimpleTemplateInterface
             'functions' => [
                 'public function get()',
                 'public function update()'
-            ]
+            ],
+            'annotations'=[]
         ];
     }
 }
@@ -148,6 +149,7 @@ getTemplateData()
             'traits' => [
                 'ExampleTrait'
             ],
+            'annotations'=[],
             'functions' => [
                 'public function get()',
                 'public function update()'
@@ -165,6 +167,7 @@ getTemplateData()
             'directory' => app_path() . '/Test',
             'interface_name' => 'ExampleInterface',
             'namespace' => 'App\Example',
+            'annotations'=[],
             'functions' => [
                 'public function get()',
                 'public function update()'
@@ -198,7 +201,8 @@ getTemplateData()
             'functions' => [
                 'public function get()',
                 'public function update()'
-            ]
+            ],
+            'annotations'=[]
         ];
     }
 ```

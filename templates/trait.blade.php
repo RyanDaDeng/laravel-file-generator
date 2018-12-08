@@ -4,6 +4,8 @@ namespace {{$data['namespace']}};
 use {{$use}};
 @endforeach
 
+@if(isset($data['annotations']))@include('LaravelFileGenerator::annotations',['notes'=>$data['annotations']])@endif
+
 trait {{$data['trait_name']}}
 
 {

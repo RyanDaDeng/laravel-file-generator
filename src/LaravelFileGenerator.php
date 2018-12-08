@@ -6,10 +6,12 @@ use TimeHunter\LaravelFileGenerator\Interfaces\ClassSimpleTemplateInterface;
 use TimeHunter\LaravelFileGenerator\Interfaces\ClassTemplateInterface;
 use TimeHunter\LaravelFileGenerator\Interfaces\InterfaceSimpleTemplateInterface;
 use TimeHunter\LaravelFileGenerator\Interfaces\InterfaceTemplateInterface;
+use TimeHunter\LaravelFileGenerator\Interfaces\RouteSimpleTemplateInterface;
 use TimeHunter\LaravelFileGenerator\Interfaces\TraitSimpleTemplateInterface;
 use TimeHunter\LaravelFileGenerator\Interfaces\TraitTemplateInterface;
 use TimeHunter\LaravelFileGenerator\Services\ClassFileGenerator;
 use TimeHunter\LaravelFileGenerator\Services\InterfaceFileGenerator;
+use TimeHunter\LaravelFileGenerator\Services\RouteFileGenerator;
 use TimeHunter\LaravelFileGenerator\Services\TraitFileGenerator;
 
 
@@ -28,6 +30,10 @@ class LaravelFileGenerator
 
         if ($object instanceof TraitSimpleTemplateInterface || $object instanceof TraitTemplateInterface) {
             return new TraitFileGenerator($object);
+        }
+
+        if ($object instanceof RouteSimpleTemplateInterface ) {
+            return new RouteFileGenerator($object);
         }
         return null;
     }

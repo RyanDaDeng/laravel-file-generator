@@ -10,6 +10,7 @@ namespace TimeHunter\LaravelFileGenerator\Services;
 
 use TimeHunter\LaravelFileGenerator\Interfaces\ClassSimpleTemplateInterface;
 use TimeHunter\LaravelFileGenerator\Interfaces\InterfaceSimpleTemplateInterface;
+use TimeHunter\LaravelFileGenerator\Interfaces\RouteSimpleTemplateInterface;
 use TimeHunter\LaravelFileGenerator\Interfaces\TraitSimpleTemplateInterface;
 
 
@@ -40,13 +41,17 @@ abstract class AbstractFileGenerator
             return $this->template->getTemplateData();
         }
 
+        if ($this->template instanceof RouteSimpleTemplateInterface) {
+            return $this->template->getTemplateData();
+        }
+
         return $this->getTemplateData();
     }
 
     public function checkDir($directory)
     {
         //Check if the directory already exists.
-        if(!is_dir($directory)){
+        if (!is_dir($directory)) {
             //Directory does not exist, so lets create it.
             mkdir($directory, 0755, true);
         }
