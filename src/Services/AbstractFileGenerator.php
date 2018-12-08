@@ -45,9 +45,12 @@ abstract class AbstractFileGenerator
 
     public function checkDir($directory)
     {
-        if (!app('files')->exists($directory)) {
-            app('files')->makeDirectory($directory);
+        //Check if the directory already exists.
+        if(!is_dir($directory)){
+            //Directory does not exist, so lets create it.
+            mkdir($directory, 0755, true);
         }
+
     }
 
     public function publish()
@@ -96,6 +99,7 @@ abstract class AbstractFileGenerator
 
     public function prepareView()
     {
+
         $prepare = app('view')->make($this->getTemplateView(), ['data' => $this->templateData])->render();
 
         $final = app('view')->make($this->getMainView(), ['data' => $prepare, 'header' => '<?php'])->render();

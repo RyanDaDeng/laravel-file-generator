@@ -4,7 +4,7 @@ namespace {{$data['namespace']}};
 use {{$use}};
 @endforeach
 
-{{$data['class_type']}} {{$data['class_name']}} extends {{$data['extends']}} implements @foreach($data['implements'] as $key =>$implement)@if(count($data['implements']) === $key+1){{$implement}} @else{{$implement}},@endif @endforeach
+{{$data['class_type']}} {{$data['class_name']}} @if($data['extends'])extends @endif{{$data['extends']}} @if($data['implements'])implements @foreach($data['implements'] as $key =>$implement)@if(count($data['implements']) === $key+1){{$implement}} @else{{$implement}},@endif @endforeach @endif
 
 {
 @foreach($data['traits'] as $trait)
@@ -16,10 +16,7 @@ use {{$use}};
 @endforeach
 
 @foreach($data['functions'] as $function)
-    {{$function}}
-    {
-
-    }
+    {!! $function !!}
 
 @endforeach
 }
