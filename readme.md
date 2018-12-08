@@ -12,10 +12,10 @@ A Laravel File Generator which allows you to:
 The main logic is using Blade template engine to populate the files. Feel free to look into the source code.
 
 ## Preview Demo
-![](preview.gif)
+![](https://github.com/RyanDaDeng/design-patterns/blob/master/preview.gif)
 
 ## Generation Demo
-![](generation.gif)
+![](https://github.com/RyanDaDeng/design-patterns/blob/master/generation.gif)
 
 
 ## Next Release features
