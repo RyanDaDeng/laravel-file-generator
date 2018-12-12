@@ -15,7 +15,7 @@ class RouteFileGenerator extends AbstractFileGenerator
 
     public function getFileName()
     {
-        return 'routes';
+        return $this->templateData['route_name'];
     }
 
     public function getTemplateData()
