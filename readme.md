@@ -38,7 +38,7 @@ This package requires the following dependencies:
 Via Composer
 
 ``` bash
-$ composer require timehunter/laravel-file-generator "^1.7.0"
+$ composer require timehunter/laravel-file-generator "^1.8.0"
 ```
 
 If your Laravel framework version <= 5.4, please register the service provider in your config file: /config/app.php, otherwise please skip it.
