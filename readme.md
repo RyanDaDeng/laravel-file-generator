@@ -38,7 +38,7 @@ This package requires the following dependencies:
 Via Composer
 
 ``` bash
-$ composer require timehunter/laravel-file-generator "^1.6.0"
+$ composer require timehunter/laravel-file-generator "^1.7.0"
 ```
 
 If your Laravel framework version <= 5.4, please register the service provider in your config file: /config/app.php, otherwise please skip it.
@@ -121,11 +121,6 @@ The function returns a View, so you can include it in any controller to see the 
 | ClassSimpleTemplateInterface     | array schema type    | Class file     |
 | InterfaceSimpleTemplateInterface | array schema type    | Interface file |
 | TraitSimpleTemplateInterface     | array schema type    | Trait file     |
-| ClassTemplateInterface           | function schema type | Class file     |
-| InterfaceTemplateInterface       | function schema type | Interface file |
-| TraitTemplateInterface           | function schema type | Trait file     |
-
-For function schema type, you just need to implement all functions from interface.
 
 
 For array schema type, they have the same function which returns schema of template:
